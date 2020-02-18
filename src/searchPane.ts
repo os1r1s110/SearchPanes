@@ -1383,6 +1383,7 @@ export default class SearchPane {
 		) {
 			let colOpts = this.s.colOpts;
 			let selected = this.s.dtPane.rows({selected: true}).data().toArray();
+			// Got an error where this would crash because .parent() returned an empty set, then parent()[0] did not exist and crashed 
 			let scrollTop = $(this.s.dtPane.table().node()).parent()[0].scrollTop;
 			let rowData = this.s.rowData;
 
