@@ -774,7 +774,7 @@ export default class SearchPane {
 				this._getComparisonRows();
 		}
 
-		(DataTable as any).select.init(this.s.dtPane);
+		(DataTable as any).select.init(this.s.dtPane);	// Why calling the select init again? (see line 731)
 
 		// Display the pane
 		this.s.dtPane.draw();
