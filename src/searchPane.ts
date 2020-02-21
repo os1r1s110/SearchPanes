@@ -164,7 +164,6 @@ export default class SearchPane {
 
 		this.s.displayed = false;
 
-		table = this.s.dt;
 		this.selections = [];
 		this.s.colOpts = this.colExists ? this._getOptions() : this._getBonusOptions();
 		let colOpts =  this.s.colOpts;
